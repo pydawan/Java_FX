@@ -15,9 +15,9 @@ public class HelloWorld extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World javaFX!(Meu primeiro programa utilizando JavaFX)");
+        primaryStage.setTitle("Hello World");
         Button btn = new Button();
-        btn.setText("Diga 'Hello World'");
+        btn.setText("Click-me");
         btn.setOnAction(new EventHandler<ActionEvent>() {
  
             @Override
