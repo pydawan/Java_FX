@@ -23,7 +23,7 @@ public class HelloWorld extends Application{
 			
 			@Override
 			public void handle(ActionEvent arg0) {
-				System.out.println("Terceiro projeto javaFX - Fé em Deus irei Longe.");
+				// TODO Auto-generated method stub
 				
 			}
 		});
