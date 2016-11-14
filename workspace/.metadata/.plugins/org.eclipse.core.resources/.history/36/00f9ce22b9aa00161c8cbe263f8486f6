@@ -1,0 +1,12 @@
+package br.com.rcc;
+
+import javafx.application.Application;
+
+public class Painel extends Application{
+	
+	public static void main(String[] args){
+		
+		launch(args);
+	}
+
+}
