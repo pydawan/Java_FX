@@ -17,9 +17,9 @@ public class Projeto2 extends Application{
 	public void start(Stage primaryStage){
 		
 		primaryStage.setTitle("Projeto 2");
-		Button btn = new Button("Clique-me");
-		Button exit = new Button("Exit");
-		//btn.setText("Clique-me");
+		Button btn = new Button();
+		Button exit = new Button();
+		btn.setText("Clique-me");
 		btn.setOnAction(new EventHandler<ActionEvent>() {
 			
 			@Override
@@ -29,8 +29,7 @@ public class Projeto2 extends Application{
 		});
 		StackPane root = new StackPane();
 		root.getChildren().add(btn);
-		Scene scene = new Scene(root, 600, 600);
-		primaryStage.setScene(scene);
+		primaryStage.setScene(new Scene(root, 400, 400));
 		primaryStage.show();
 	}
 
