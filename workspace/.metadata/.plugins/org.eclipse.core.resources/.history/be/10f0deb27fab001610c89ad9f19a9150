@@ -1,0 +1,7 @@
+package br.com.rcc;
+
+import javafx.application.Application;
+
+public class Projeto2 extends Application{
+
+}
