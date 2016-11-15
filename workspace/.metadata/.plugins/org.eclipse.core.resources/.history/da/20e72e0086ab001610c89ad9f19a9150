@@ -19,11 +19,8 @@ public class Projeto2 extends Application{
 		
 		primaryStage.setTitle("Projeto 2");
 		Button btn = new Button("Clique-me");
+		btn.setOnAction(e -> System.exit(0)); //expressões lambdas
 		Button exit = new Button("Exit");
-		exit.setOnAction(e -> {
-			System.out.println("Saindo do App");
-			System.exit(0);	//expressões lambdas
-		}); 
 		//btn.setText("Clique-me");
 		btn.setOnAction(new EventHandler<ActionEvent>() {
 			
@@ -35,7 +32,6 @@ public class Projeto2 extends Application{
 		VBox root = new VBox();
 		root.getChildren().addAll(btn, exit);
 		Scene scene = new Scene(root, 600, 600);
-		primaryStage.setTitle("Meu Titulo");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

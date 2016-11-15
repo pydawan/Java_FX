@@ -19,11 +19,11 @@ public class Projeto2 extends Application{
 		
 		primaryStage.setTitle("Projeto 2");
 		Button btn = new Button("Clique-me");
-		Button exit = new Button("Exit");
-		exit.setOnAction(e -> {
-			System.out.println("Saindo do App");
+		btn.setOnAction(e -> {
+			System.out.println("Sair do App");
 			System.exit(0);	//expressões lambdas
 		}); 
+		Button exit = new Button("Exit");
 		//btn.setText("Clique-me");
 		btn.setOnAction(new EventHandler<ActionEvent>() {
 			
