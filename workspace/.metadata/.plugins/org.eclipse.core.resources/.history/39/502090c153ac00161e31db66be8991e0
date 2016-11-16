@@ -1,0 +1,14 @@
+package application;
+
+import java.awt.ActiveEvent;
+
+public class Painel {
+	
+	
+	public void generateRandom(ActiveEvent evento){
+		
+		
+		
+	}
+
+}

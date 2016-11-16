@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;JavaFX_Projeto5/src/application&apos;&#x0D;&#x0A;- Original project: &apos;javaFX_Projeto4&apos;&#x0D;&#x0A;- Destination element: &apos;JavaFX_Projeto5/src/application&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     application.Main.java&#x0D;&#x0A;     application.MainController.java&#x0D;&#x0A;     application.css&#x0D;&#x0A;     Main.fxml" description="Copy elements" destination="=JavaFX_Projeto5/src&lt;application" element1="src/application/application.css" element2="src/application/Main.fxml" element3="/src&lt;application{Main.java" element4="/src&lt;application{MainController.java" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1479340518324" units="2" version="1.0"/>
+</session>
