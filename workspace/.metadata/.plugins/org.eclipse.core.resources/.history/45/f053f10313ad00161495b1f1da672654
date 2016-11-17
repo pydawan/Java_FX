@@ -1,0 +1,9 @@
+package application;
+
+import javafx.scene.control.Label;
+
+public class Controle {
+	
+	private Label minhaMen;
+
+}
