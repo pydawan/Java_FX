@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;JavaFX_SceneBuilder&apos; to &apos;JavaFX_ProjetoSceneBuilder&apos;&#x0D;&#x0A;- Original element: &apos;JavaFX_SceneBuilder&apos;&#x0D;&#x0A;- Renamed element: &apos;JavaFX_SceneBuilder&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;JavaFX_SceneBuilder&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=JavaFX_SceneBuilder" name="JavaFX_ProjetoSceneBuilder" references="true" stamp="1479419124081" version="1.0"/>
+</session>

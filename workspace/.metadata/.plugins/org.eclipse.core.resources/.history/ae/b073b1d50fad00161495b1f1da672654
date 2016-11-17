@@ -1,0 +1,15 @@
+package application;
+
+import java.awt.ActiveEvent;
+
+import javafx.scene.control.Label;
+
+public class Controller {
+	
+	private Label minhaMSG;
+	public void generateRandom(ActiveEvent evento){
+		
+		
+	}
+
+}

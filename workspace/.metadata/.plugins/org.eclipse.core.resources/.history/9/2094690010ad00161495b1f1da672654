@@ -1,0 +1,18 @@
+package application;
+
+import java.awt.ActiveEvent;
+import java.util.Random;
+
+import javafx.scene.control.Label;
+
+public class Controller {
+	
+	private Label minhaMSG;
+	public void generateRandom(ActiveEvent evento){
+		
+		Random rand = new Random();
+		int myRand = rand.nextInt(60)+1;
+		
+	}
+
+}
