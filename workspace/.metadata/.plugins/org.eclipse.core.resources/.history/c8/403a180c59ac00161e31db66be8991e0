@@ -1,0 +1,9 @@
+package application;
+
+import javafx.event.ActionEvent;
+
+public class MainClass {
+	
+	public void generateRandom(ActionEvent)
+
+}
