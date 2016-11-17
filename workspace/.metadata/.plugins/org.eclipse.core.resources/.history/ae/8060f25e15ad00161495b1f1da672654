@@ -1,5 +1,5 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-.button{
+#click{
 	-fx-font-size: 30px;
 	-fx-background-color: rgba(255, 255, 255, .80);
 	-fx-text-fill: blue ;
