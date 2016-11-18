@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#click{
+	-fx-background-color: orangered ;
+	-fx-border-radius: 80 10 10 10;
+	-fx-font-size: 20;
+	-fx-font-family: arial;
+}
+#label{
+	-fx-background-color:orangered;
+	-fx-font-size: 20;
+	-fx-border-color: black ;
+	-fx-text-alignment: center ;
+}

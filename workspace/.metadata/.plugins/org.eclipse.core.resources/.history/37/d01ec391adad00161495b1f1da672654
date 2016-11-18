@@ -1,0 +1,44 @@
+package application;
+
+import java.util.Random;
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class Aplicacao extends Application{
+	
+	public static void main(String[]args){
+		launch(args);
+	}
+	
+	private Label myLabel;
+	
+	public void start(Stage pramaryStage){
+		
+		pramaryStage.setTitle("Painel de Teste");
+		Button exit = new Button("SAIR");
+		exit.setOnAction(e ->{
+			System.out.println("Saindo");
+			System.exit(0);
+		});
+		Button btn = new Button("ENTRAR");
+		btn.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent arg0) {
+				Random rand = new Random();
+				int myRando = rand.nextInt(60)+1;
+				myLabel.setText(Integer.toString(myRando));
+				
+			}
+		});
+		
+		//StackPane root = new StackPane();  -->> Poderia colocar um Stackpane mas não funcionará
+	}
+
+}
