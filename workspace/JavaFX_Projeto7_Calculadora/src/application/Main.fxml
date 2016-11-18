@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <StackPane prefHeight="50.0" prefWidth="300.0">
          <children>
@@ -19,7 +19,7 @@
          </children></StackPane>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="7">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="7">
                <font>
                   <Font size="18.0" />
                </font>
@@ -27,7 +27,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="8">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="8">
                <font>
                   <Font size="18.0" />
                </font>
@@ -35,7 +35,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="9">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="9">
                <font>
                   <Font size="18.0" />
                </font>
@@ -43,43 +43,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="/">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="5.0" right="10.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
-         <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="6">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="5.0" right="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="5">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="5.0" right="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="4">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="5.0" right="10.0" />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="*">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="/">
                <font>
                   <Font size="18.0" />
                </font>
@@ -91,7 +55,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="3">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="6">
                <font>
                   <Font size="18.0" />
                </font>
@@ -99,7 +63,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="2">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="5">
                <font>
                   <Font size="18.0" />
                </font>
@@ -107,7 +71,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="1">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="4">
                <font>
                   <Font size="18.0" />
                </font>
@@ -115,7 +79,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="-">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="*">
                <font>
                   <Font size="18.0" />
                </font>
@@ -127,7 +91,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="110.0" text="0">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="3">
                <font>
                   <Font size="18.0" />
                </font>
@@ -135,7 +99,7 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="=">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="2">
                <font>
                   <Font size="18.0" />
                </font>
@@ -143,7 +107,43 @@
                   <Insets left="5.0" right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="+">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="110.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="=">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="+">
                <font>
                   <Font size="18.0" />
                </font>
