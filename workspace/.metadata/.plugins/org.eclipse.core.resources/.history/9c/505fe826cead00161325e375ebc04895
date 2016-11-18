@@ -9,14 +9,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <StackPane prefHeight="50.0" prefWidth="300.0">
-         <children>
-            <Label prefHeight="32.0" prefWidth="300.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children></StackPane>
+      <StackPane prefHeight="50.0" prefWidth="300.0" />
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
          <children>
             <Button mnemonicParsing="false" prefWidth="50.0" text="7">
@@ -127,7 +120,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="110.0" text="0">
+            <Button mnemonicParsing="false" prefWidth="120.0" text="0">
                <font>
                   <Font size="18.0" />
                </font>
