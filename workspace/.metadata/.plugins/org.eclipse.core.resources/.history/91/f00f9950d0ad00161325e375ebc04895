@@ -1,0 +1,28 @@
+package application;
+
+public class Model {
+	
+	public float calculadora(long num1, long num2, String operador){
+		
+		
+		switch (operador) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		return 0;
+		
+	}
+
+}

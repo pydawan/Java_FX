@@ -1,0 +1,27 @@
+package application;
+
+public class Model {
+	
+	public float calculadora(long num1, long num2, String operador){
+		
+		
+		switch (operador) {
+		case "+":
+			return num1 + num2;	
+			break;
+		case " - ":
+			return num1 - num2;
+			break;
+		case " * ":
+			return num1 * num2;
+			break;
+		case "/":
+			return num1 / num2;
+			break;
+		default:
+			break;
+		}
+		
+	}
+
+}

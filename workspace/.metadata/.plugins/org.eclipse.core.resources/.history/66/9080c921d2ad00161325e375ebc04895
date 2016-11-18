@@ -1,0 +1,33 @@
+package application;
+
+import javafx.event.ActionEvent;
+
+import javafx.fxml.FXML;
+
+import javafx.scene.control.Label;
+
+public class MainController {
+	
+	
+	@FXML
+	private Label result;
+	private long number1 = 0;
+	private String operador = "";
+	private boolean start = true;
+	
+	@FXML
+	public void processNumber(ActionEvent eventNumber){
+		if(start){
+			result.setText("");
+			start = false;
+		}
+		Button value = ()
+		
+		
+	}
+	@FXML
+	public void processOperators(ActionEvent eventOperator){
+		
+	}
+
+}
