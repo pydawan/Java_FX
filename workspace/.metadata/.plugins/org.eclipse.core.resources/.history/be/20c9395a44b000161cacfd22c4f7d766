@@ -1,0 +1,16 @@
+package application;
+
+import javafx.scene.control.Label;
+
+public class ControleMain {
+	
+	
+	private Label result;
+	private String operador = "";
+	private Controle controle = new Controle();
+	private long num1 = 0;
+	private
+	
+	
+
+}

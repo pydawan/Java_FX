@@ -1,0 +1,22 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class ControleMain {
+	
+	@FXML
+	private Label result;
+	private String operador = "";
+	private Controle controle = new Controle();
+	private long num1 = 0;
+	private boolean start = true;
+	
+	public void operadorNumerico(ActionEvent evN){
+		
+	}
+	
+	
+
+}
