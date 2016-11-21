@@ -12,7 +12,7 @@ public class MainControle {
 	private boolean start = true;
 	private String operador = "";
 	private long number1 = 0;
-	private Controle controle = new Controle();
+	private Controle controle;
 	
 	@FXML
 	public void operNumber(ActionEvent event){

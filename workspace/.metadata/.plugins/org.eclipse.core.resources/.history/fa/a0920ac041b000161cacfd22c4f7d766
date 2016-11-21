@@ -12,7 +12,7 @@ public class MainControle {
 	private boolean start = true;
 	private String operador = "";
 	private long number1 = 0;
-	private Controle controle = new Controle();
+	private Controle controle;
 	
 	@FXML
 	public void operNumber(ActionEvent event){
@@ -45,7 +45,7 @@ public class MainControle {
 			float output = controle.calculadora(number1, number2, operador);
 			resultado.setText(String.valueOf(output));
 			operador = "";
-			start = true;
+			start = false;
 		}
 	}
 

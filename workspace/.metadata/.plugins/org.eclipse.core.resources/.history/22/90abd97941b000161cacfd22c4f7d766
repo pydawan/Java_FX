@@ -12,7 +12,7 @@ public class MainControle {
 	private boolean start = true;
 	private String operador = "";
 	private long number1 = 0;
-	private Controle controle = new Controle();
+	private Controle controle;
 	
 	@FXML
 	public void operNumber(ActionEvent event){
@@ -35,17 +35,12 @@ public class MainControle {
 			}
 			operador = value;
 			number1 = Long.parseLong(resultado.getText());
-			resultado.setText("");
-			
-		}else{
-			if(operador.isEmpty()){
-				return;
-			}
+			result.setText("");
 			long number2 = Long.parseLong(resultado.getText());
 			float output = controle.calculadora(number1, number2, operador);
 			resultado.setText(String.valueOf(output));
 			operador = "";
-			start = true;
+			start = false;
 		}
 	}
 
