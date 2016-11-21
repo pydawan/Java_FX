@@ -1,0 +1,9 @@
+package application;
+
+public class Controle {
+	
+	public floa calculadora(long num1, long num2, String operador){
+		
+	}
+
+}
