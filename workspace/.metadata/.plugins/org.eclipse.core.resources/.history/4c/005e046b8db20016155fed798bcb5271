@@ -17,7 +17,7 @@ public class Controller {
 	@FXML
 	private PasswordField senha;
 	
-	@FXML
+	
 	public void entrar(ActionEvent evento){
 		
 		if(txt.equals("rafael") && senha.equals("rafael")){
