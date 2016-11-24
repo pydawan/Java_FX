@@ -1,0 +1,11 @@
+package application;
+
+import javafx.event.ActionEvent;
+
+public class Voltar {
+	
+	public void voltar(ActionEvent){
+		
+	}
+
+}
