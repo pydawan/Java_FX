@@ -1,0 +1,20 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+
+public class MainController implements Initializable{
+	
+	public ComboBox<String> combobox;
+	
+	
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
