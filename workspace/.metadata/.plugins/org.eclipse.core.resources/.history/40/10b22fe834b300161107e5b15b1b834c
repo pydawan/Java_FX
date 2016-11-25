@@ -41,11 +41,6 @@ public class MainController implements Initializable{
 	public void buttonAction(ActionEvent eventoButton){
 		//myListView.getItems().addAll("rafael");
 		//minhaL.setText(combobox.getValue());
-		ObservableList<String> names;
-		names = myListView.getSelectionModel().getSelectedItems();
-		for(String name : names){
-			System.out.println(name);
-		}
 	}
 	
 
