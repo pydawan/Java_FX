@@ -1,0 +1,8 @@
+package application;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+
+public class MainController implements Initializable{
+
+}
