@@ -4,7 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.FXCollections.*?>
+<?import javafx.scene.FXCollections.*?>
 
 
 <AnchorPane prefHeight="400.0" prefWidth="400.0"
@@ -16,11 +16,11 @@
 		<ComboBox fx:id="combo" layoutX="18.0" layoutY="127.0"
 			onAction="#comboChanged" prefWidth="150.0" promptText="selecionar">
 			<items>
-				<FXCollections fx:factory="observableArrayList">
+				<FXCollection fx:factory="observableArrayList">
 					<String fx:value="Casa" />
 					<String fx:value="Empresa" />
 					<String fx:value="Parque" />
-				</FXCollections>
+				</FXCollection>
 			</items>
 		</ComboBox>
 		<ListView fx:id="listView" layoutX="19.0" layoutY="215.0"
