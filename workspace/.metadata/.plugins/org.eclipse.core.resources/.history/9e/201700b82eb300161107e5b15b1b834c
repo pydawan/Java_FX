@@ -31,12 +31,12 @@ public class MainController implements Initializable{
 	}
 	public void comboChanged(ActionEvent event){
 		combobox.getItems().addAll();
-		
+		minhaLabel.setText(combobox.getValue());
 		
 	}
 	public void buttonAction(ActionEvent event){
 		combobox.getItems().addAll();
-		minhaLabel.setText(combobox.getValue());
+		//minhaLabel.setText(combobox.getValue());
 		
 	}
 
