@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.Controller">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <ComboBox layoutX="52.0" layoutY="186.0" prefHeight="33.0" prefWidth="308.0" promptText="SELECIONAR NOME" />
+      <ComboBox fx:id="combo" layoutX="52.0" layoutY="186.0" onAction="#comboChanged" prefHeight="33.0" prefWidth="308.0" promptText="SELECIONAR NOME" />
+      <Label fx:id="myLabel" layoutX="46.0" layoutY="50.0" onDragDetected="#comboChanged" prefHeight="52.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

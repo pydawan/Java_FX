@@ -1,0 +1,27 @@
+package application;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+
+public class MainController implements Initializable{
+	
+	@FXML
+	private Label myLabel;
+
+	@FXML
+	private ComboBox<String> combo;
+	
+	ObservableList<String> lista = FXCollections.observableArrayList("rafael", "rose", "vitor", "Heitor");
+	
+	
+	public void comboChanged(ActionEvent event){
+		
+		combo.getItems().addAll(arg0)
+		
+	}
+}
