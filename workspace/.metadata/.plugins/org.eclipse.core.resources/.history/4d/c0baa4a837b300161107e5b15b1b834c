@@ -1,0 +1,38 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
+
+public class MainController implements Initializable{
+
+	@FXML
+	TreeView<String> myTreeView;
+	
+	
+	
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		TreeItem<String> root = new TreeItem<>("root");
+		
+		TreeItem<String> nodeA = new TreeItem<>("NODE-A");
+		TreeItem<String> nodeB = new TreeItem<>("NODE-B");
+		TreeItem<String> nodeC = new TreeItem<>("NODE-C");
+		TreeItem<String> nodeD = new TreeItem<>("NODE-D");
+		
+		root.getChildren().add(nodeA);
+		root.getChildren().add(nodeB);
+		root.getChildren().add(nodeC);
+		root.getChildren().add(nodeD);
+		
+	}
+
+	
+	
+	
+}
