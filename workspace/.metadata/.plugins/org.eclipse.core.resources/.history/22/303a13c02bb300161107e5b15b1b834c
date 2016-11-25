@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ComboBox fx:id="combobox" layoutX="19.0" layoutY="167.0" onAction="#comboChanged" prefHeight="25.0" prefWidth="268.0" promptText="Select Name">
+      	
+      </ComboBox>
+      <Label fx:id="minhaLabel" layoutX="19.0" layoutY="50.0" prefHeight="25.0" prefWidth="268.0" />
+      <Button layoutX="105.0" layoutY="221.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="34.0" prefWidth="82.0" text="OK" />
+   </children>
+</AnchorPane>

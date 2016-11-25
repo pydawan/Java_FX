@@ -20,7 +20,7 @@ public class MainController implements Initializable{
 	public ComboBox<String> combobox;
 	
 	
-	ObservableList<String> lista = FXCollections.observableArrayList("Rafael", "Rose", "Vitor", "Heitor");
+	ObservableList<String> lista = FXCollections.observableArrayList();
 	
 	
 	@Override
@@ -30,12 +30,12 @@ public class MainController implements Initializable{
 		
 	}
 	public void comboChanged(ActionEvent event){
-		combobox.getItems().addAll("Pai", "Mãe");
+		combobox.getItems().addAll();
 		minhaLabel.setText(combobox.getValue());
 		
 	}
 	public void buttonAction(ActionEvent event){
-		combobox.getItems().addAll("Pai", "Mãe");
+		combobox.getItems().addAll();
 		//minhaLabel.setText(combobox.getValue());
 		
 	}
