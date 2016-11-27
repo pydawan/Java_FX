@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btn1" layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#ButtonAction1" text="Select One File" />
+      <Button fx:id="btn2" layoutX="25.0" layoutY="203.0" mnemonicParsing="false" onAction="#ButtonAction2" prefHeight="25.0" prefWidth="106.0" text="Select Mult File" />
+      <ListView fx:id="ListV" layoutX="140.0" layoutY="24.0" prefHeight="358.0" prefWidth="244.0" />
+   </children>
+</AnchorPane>
