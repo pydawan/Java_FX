@@ -4846,3 +4846,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.ds 1 0 2016-11-28 19:42:25.424
 !MESSAGE Could not bind a reference of component org.eclipse.fx.core.internal.JUtilLoggerFactory. The reference is: Reference[name = registerHandler, interface = java.util.logging.Handler, policy = dynamic, policy-option = greedy, cardinality = 0..n, target = null, bind = registerHandler, unbind = unregisterHandler, updated = null]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2016-11-28 19:49:24.608
+!MESSAGE Could not bind a reference of component org.eclipse.fx.ide.css.cssext.ui.internal.DefaultCssExtProvider. The reference is: Reference[name = ICSSExtModelProvider, interface = org.eclipse.fx.ide.css.cssext.ICSSExtModelProvider, policy = dynamic, cardinality = 0..n, target = null, bind = bindCssExtensionModelProvider, unbind = unbindCssExtensionModelProvider]
