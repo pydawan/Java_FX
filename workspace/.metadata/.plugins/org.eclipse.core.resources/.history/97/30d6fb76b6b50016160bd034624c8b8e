@@ -1,0 +1,29 @@
+package application;
+
+import javafx.beans.property.*;
+
+public class MyName {
+	
+	private DoubleProperty number;
+
+	public double getNumber() {
+		if(number != null)
+		return number.get();
+		return 0;
+	}
+
+	public void setNumber(DoubleProperty number) {
+		this.number = number;
+	}
+	
+	public final DoubleProperty numberProperty(){
+		if(number == null){
+			number = new SimpleDoubleProperty(0);
+		}
+		return number;
+	}
+
+	
+	
+
+}

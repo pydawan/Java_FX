@@ -4,17 +4,25 @@ import javafx.beans.property.*;
 
 public class MyName {
 	
-	private double number;
+	private DoubleProperty number;
 
 	public double getNumber() {
-		if(number != 0)
+		if(number != null)
 		return number.get();
 		return 0;
 	}
 
 	public void setNumber(double number) {
-		this.number = number;
+		this.numberProperty().set(number);
 	}
+	
+	public final DoubleProperty numberProperty(){
+		if(number == null){
+			number = new SimpleDoubleProperty(0);
+		}
+		return number;
+	}
+
 	
 	
 
