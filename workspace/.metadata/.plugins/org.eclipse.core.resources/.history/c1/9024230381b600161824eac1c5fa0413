@@ -1,0 +1,11 @@
+package application;
+
+import javafx.beans.property.DoubleProperty;
+
+public class MeuNome {
+	
+	private DoubleProperty number;
+	
+	
+
+}
