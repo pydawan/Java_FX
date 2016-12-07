@@ -52,8 +52,8 @@
 <fullyQualifiedTypeName name="java.lang.Number"/>
 <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
-<fullyQualifiedTypeName name="javax.xml.stream.events.ProcessingInstruction"/>
-<fullyQualifiedTypeName name="javafx.scene.control.ProgressBar"/>
 <fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="javafx.scene.control.ProgressBar"/>
+<fullyQualifiedTypeName name="javax.xml.stream.events.ProcessingInstruction"/>
 </qualifiedTypeNameHistroy>

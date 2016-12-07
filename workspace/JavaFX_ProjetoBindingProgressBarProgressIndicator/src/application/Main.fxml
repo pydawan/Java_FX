@@ -10,7 +10,7 @@
    <children>
       <Button layoutX="27.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="66.0" prefWidth="118.0" text="Button" />
       <Label fx:id="label" layoutX="112.0" layoutY="14.0" prefHeight="85.0" prefWidth="130.0" text="a" />
-      <Button layoutX="242.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="66.0" prefWidth="118.0" text="Button" />
+      <Button layoutX="242.0" layoutY="107.0" mnemonicParsing="false" onAction="#btn2Click" prefHeight="66.0" prefWidth="118.0" text="Button" />
       <ProgressBar fx:id="bar" layoutX="24.0" layoutY="186.0" prefHeight="40.0" prefWidth="336.0" progress="0.51" />
       <ProgressIndicator fx:id="indico" layoutX="124.0" layoutY="250.0" prefHeight="136.0" prefWidth="118.0" progress="0.52" />
    </children>
