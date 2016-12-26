@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="application.Controle"/>
 <fullyQualifiedTypeName name="javafx.stage.Stage"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
 <fullyQualifiedTypeName name="javafx.scene.control.PasswordField"/>
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 <fullyQualifiedTypeName name="application.Controller"/>
@@ -41,19 +40,24 @@
 <fullyQualifiedTypeName name="javafx.scene.control.ListView"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="application.MyName"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="javafx.scene.Parent"/>
-<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
-<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
 <fullyQualifiedTypeName name="application.MeuNome"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 <fullyQualifiedTypeName name="javafx.beans.property.DoubleProperty"/>
 <fullyQualifiedTypeName name="javafx.beans.property.SimpleDoubleProperty"/>
 <fullyQualifiedTypeName name="java.lang.Number"/>
-<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
 <fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="javafx.scene.control.ProgressBar"/>
 <fullyQualifiedTypeName name="javax.xml.stream.events.ProcessingInstruction"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Slider"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.text.NumberFormat"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+<fullyQualifiedTypeName name="javafx.application.Platform"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+<fullyQualifiedTypeName name="javafx.scene.Parent"/>
 </qualifiedTypeNameHistroy>
