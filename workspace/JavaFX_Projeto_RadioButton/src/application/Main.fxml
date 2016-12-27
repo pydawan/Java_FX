@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <RadioButton fx:id="rb1" layoutX="27.0" layoutY="70.0" mnemonicParsing="false" onAction="#radioSelect" selected="true" text="MAN">
+         <toggleGroup>
+            <ToggleGroup fx:id="Mygroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb2" layoutX="27.0" layoutY="116.0" mnemonicParsing="false" onAction="#radioSelect" prefHeight="17.0" prefWidth="75.0" text="FEMALE" toggleGroup="$Mygroup" />
+      <Label fx:id="lb1" layoutX="27.0" layoutY="166.0" prefHeight="84.0" prefWidth="221.0" />
+   </children>
+</AnchorPane>
