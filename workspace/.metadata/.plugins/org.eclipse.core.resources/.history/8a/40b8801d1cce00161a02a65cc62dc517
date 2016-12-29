@@ -1,0 +1,8 @@
+package application;
+
+public class Estudante {
+	
+	private final Integer id;
+	
+
+}

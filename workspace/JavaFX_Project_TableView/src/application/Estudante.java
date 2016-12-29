@@ -2,6 +2,7 @@ package application;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.css.SimpleStyleableIntegerProperty;
 
 public class Estudante {
 	
@@ -10,11 +11,11 @@ public class Estudante {
 	private final SimpleIntegerProperty sobreNome;
 	private final SimpleIntegerProperty idade;
 	
-	public Estudante(Integer id, String nome, String string, Integer idade) {
+	public Estudante(Integer id, String nome, String sobreNome, Integer idade) {
 		super();
 		this.id = new SimpleIntegerProperty(id);
 		this.nome = new SimpleStringProperty(nome);
-		this.sobreNome = new SimpleIntegerProperty(sobreNome);
+		this.sobreNome = new SimpleIntegerProperty();
 		this.idade = new SimpleIntegerProperty(idade);
 	}
 
