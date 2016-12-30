@@ -1,0 +1,32 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+public class MainController implements Initializable{
+
+	@FXML private TableView<Estudante> tableView;
+	@FXML private TableColumn<Estudante, Integer> id;
+	@FXML private TableColumn<Estudante, String> nome;
+	@FXML private TableColumn<Estudante, String> sobreNome;
+	@FXML private TableColumn<Estudante, Integer> idade;
+
+	
+	public ObservableList<Estudante> lista = FXCollections
+	
+	
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		
+		
+	}
+
+}
