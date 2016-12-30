@@ -1,0 +1,21 @@
+package application;
+
+import java.time.LocalDate;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+
+public class MainController {
+	
+	@FXML private DatePicker dp;
+	
+	@FXML private Label showdata;
+	
+	public void ShowData(ActionEvent evento){
+		
+		LocalDate ld = dp.getValue();
+	}
+
+}
