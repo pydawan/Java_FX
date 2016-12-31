@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.chart.*?>
 <?import java.lang.*?>
@@ -9,7 +10,12 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="477.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
    <children>
-      <PieChart fx:id="pieChart" layoutY="3.0" prefHeight="370.0" prefWidth="477.0" title="Pie Chart" />
+      <PieChart fx:id="pieChart" layoutY="3.0" prefHeight="300.0" prefWidth="477.0" title="Pie Chart" />
       <Button layoutX="213.0" layoutY="392.0" mnemonicParsing="false" onAction="#btn1" text="Button" />
+      <Label fx:id="label1" layoutX="144.0" layoutY="331.0" onDragDetected="#handle" prefHeight="52.0" prefWidth="192.0" textFill="#ee0808">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
