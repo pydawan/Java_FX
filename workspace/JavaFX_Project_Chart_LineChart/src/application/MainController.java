@@ -19,8 +19,31 @@ public class MainController {
 		series.getData().add(new XYChart.Data<String, Number>("Fev", 100));
 		series.getData().add(new XYChart.Data<String, Number>("Março", 500));
 		series.getData().add(new XYChart.Data<String, Number>("Abril", 50));
-		series.setName("Line CHART");
-		idLC.getData().add(series);
+		series.setName("PAY 1");
+		
+	//	idLC.getData().add(series);
+		
+		
+		XYChart.Series<String, Number> series1 = new XYChart.Series<String, Number>();
+		
+		series1.getData().add(new XYChart.Data<String, Number>("Jan", 100));
+		series1.getData().add(new XYChart.Data<String, Number>("Fev", 150));
+		series1.getData().add(new XYChart.Data<String, Number>("Março", 200));
+		series1.getData().add(new XYChart.Data<String, Number>("Abril", 250));
+		series1.setName("PAY 2");
+		
+		
+		XYChart.Series<String, Number> series2 = new XYChart.Series<String, Number>();
+		
+		series2.getData().add(new XYChart.Data<String, Number>("Jan", 800));
+		series2.getData().add(new XYChart.Data<String, Number>("Fev", 950));
+		series2.getData().add(new XYChart.Data<String, Number>("Março", 1100));
+		series2.getData().add(new XYChart.Data<String, Number>("Abril",250));
+		series2.setName("PAY 2");
+		
+		
+		
+		idLC.getData().addAll(series, series1, series2);
 	}
 
 }
