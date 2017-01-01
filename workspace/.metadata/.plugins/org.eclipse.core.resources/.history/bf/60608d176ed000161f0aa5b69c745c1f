@@ -1,0 +1,19 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
+
+public class MainController {
+	
+	@FXML LineChart<String, Number> idLC;
+	
+	public void btn(ActionEvent evento){
+		
+		XYChart.Series<String, Number> series = new XYChart.Series<String, Number>();
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package application;
+
+import javafx.fxml.FXML;
+import javafx.scene.chart.LineChart;
+
+public class MainController {
+	
+	@FXML LineChart<String, Number>
+
+}
