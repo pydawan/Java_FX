@@ -1,0 +1,16 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.chart.LineChart;
+
+public class MainController {
+	
+	@FXML LineChart<String, Number> lc;
+	
+	public void btn(ActionEvent event){
+		
+	}
+	
+
+}
