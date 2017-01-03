@@ -1,0 +1,18 @@
+package application;
+import java.sql.*;
+
+public class SQLiteConnection {
+	
+	public static Connection conectar(){
+		
+		try {
+			Class.forName("org.sqlite.JDBC");
+			Connection con = DriverManager.getConnection("jdbc:sqlite:IDDB.sqlite");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+		
+	}
+
+}
