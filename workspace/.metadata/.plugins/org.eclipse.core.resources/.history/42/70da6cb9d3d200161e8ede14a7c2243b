@@ -1,0 +1,19 @@
+package application;
+
+import java.sql.*;
+
+
+public class LoginModel {
+	
+	Connection conectar;
+	
+	public LoginModel(){
+		
+		conectar = SQLiteConnection.conectar();
+		
+		if(conectar == null) System.exit(1);
+		
+	}
+	public boolean 
+	
+}

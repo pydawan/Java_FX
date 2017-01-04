@@ -1,0 +1,12 @@
+package application;
+
+import java.sql.*;
+
+
+public class LoginModel {
+	Connection conectar;
+	public LoginModel(){
+		
+	}
+	
+}

@@ -5,23 +5,24 @@ import java.sql.*;
 
 public class LoginModel {
 	
-	Connection conector;
+	Connection conectar;
 	
 	public LoginModel(){
 		
-		conector = SQLiteConnection.conectar();
+		conectar = SQLiteConnection.conectar();
 		
-		if(conector == null) System.exit(1); 
+		if(conectar == null) System.exit(1);
+		
 	}
-		public boolean isDbConnected(){
-			
-			try{
-			conector.isClosed();
-			}catch(Exception e){
-			
-				e.printStackTrace();
-				return false;		
+	public boolean isDbConnected(){
+		
+		try {
+			return !conectar.isClosed();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
 		}
-}
-}
+	}
+	
 }
