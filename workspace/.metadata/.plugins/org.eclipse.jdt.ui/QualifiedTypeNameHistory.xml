@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javafx.scene.control.SelectionMode"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="javafx.stage.FileChooser"/>
-<fullyQualifiedTypeName name="javafx.stage.FileChooser.ExtensionFilter"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="javafx.scene.control.ListView"/>
@@ -22,7 +17,6 @@
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
 <fullyQualifiedTypeName name="javafx.application.Platform"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javafx.scene.control.CheckBox"/>
 <fullyQualifiedTypeName name="javafx.scene.control.RadioButton"/>
 <fullyQualifiedTypeName name="javafx.css.SimpleStyleableIntegerProperty"/>
@@ -36,7 +30,6 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="javafx.scene.control.DatePicker"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
-<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
 <fullyQualifiedTypeName name="javafx.scene.web.WebView"/>
 <fullyQualifiedTypeName name="javafx.scene.web.WebEngine"/>
 <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
@@ -45,8 +38,6 @@
 <fullyQualifiedTypeName name="javafx.scene.chart.PieChart.Data"/>
 <fullyQualifiedTypeName name="java.awt.Event"/>
 <fullyQualifiedTypeName name="java.lang.Number"/>
-<fullyQualifiedTypeName name="javafx.scene.Parent"/>
-<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
 <fullyQualifiedTypeName name="javafx.scene.chart.LineChart"/>
 <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
@@ -58,6 +49,15 @@
 <fullyQualifiedTypeName name="application.MainController"/>
 <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
 <fullyQualifiedTypeName name="javafx.scene.input.MouseEvent"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Tooltip"/>
+<fullyQualifiedTypeName name="javafx.scene.Parent"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="application.SQLiteConnection"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="application.LoginModel"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 </qualifiedTypeNameHistroy>
