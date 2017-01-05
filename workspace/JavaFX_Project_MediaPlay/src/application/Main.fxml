@@ -20,6 +20,7 @@
             <Button mnemonicParsing="false" onAction="#reloader" text="RELOADER" />
             <Button mnemonicParsing="false" onAction="#start" text="START" />
             <Button mnemonicParsing="false" onAction="#last" text="LAST" />
+            <Slider fx:id="valueSlider" prefHeight="26.0" prefWidth="140.0" />
          </children>
       </HBox>
    </bottom>
