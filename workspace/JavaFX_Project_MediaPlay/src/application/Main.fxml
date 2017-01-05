@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.media.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -9,4 +10,17 @@
    <center>
       <MediaView fx:id="media" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#play" text="PLAY" />
+            <Button mnemonicParsing="false" onAction="#pause" text="PAUSE" />
+            <Button mnemonicParsing="false" onAction="#last" text="LAST" />
+            <Button mnemonicParsing="false" onAction="#slow" text="SLOW" />
+            <Button mnemonicParsing="false" onAction="#reloader" text="RELOADER" />
+            <Button mnemonicParsing="false" onAction="#start" text="START" />
+            <Button mnemonicParsing="false" onAction="#last" text="LAST" />
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>

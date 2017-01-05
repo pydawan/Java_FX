@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.media.Media;
@@ -26,19 +27,38 @@ public class MainController implements Initializable{
 		String path = new File("src/media/gato.mp4").getAbsolutePath();
 		me = new Media(new File(path).toURI().toString());
 		mp = new MediaPlayer(me);
-		media.setMediaPlayer(mp);
-		
-		//auto player
-		
-		mp.setAutoPlay(true);
+		media.setMediaPlayer(mp);		
+		//mp.setAutoPlay(true);
 		DoubleProperty width = media.fitWidthProperty();
 		DoubleProperty height = media.fitHeightProperty();
 		width.bind(Bindings.selectDouble(media.sceneProperty(), "width"));
 		height.bind(Bindings.selectDouble(media.sceneProperty(), "height"));
-		
-		
+				
 	}
-	
+	public void play(ActionEvent event){
+		mp.play();
+	}
+	public void pause(ActionEvent event){
+		mp.pause();
+	}
+	public void fast(ActionEvent event){
+		mp.setRate(2);
+	}
+	public void slow(ActionEvent event){
+		mp.setRate(.5);
+	}
+	public void reloader(ActionEvent event){
+		mp.seek(mp.getStartTime());
+		mp.play();
+	}
+	public void start(ActionEvent event){
+		mp.seek(mp.getStartTime());
+		mp.stop();
+	}
+	public void last(ActionEvent event){
+		mp.seek(mp.getTotalDuration());
+		mp.stop();
+	}
 	
 
 }
