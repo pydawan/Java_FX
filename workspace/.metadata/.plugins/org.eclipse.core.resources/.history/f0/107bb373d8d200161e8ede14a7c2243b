@@ -1,0 +1,42 @@
+package application;
+
+import java.sql.*;
+
+
+public class LoginModel {
+	
+	Connection conectar;
+	
+	public LoginModel(){
+		
+		conectar = SQLiteConnection.conectar();
+		
+		if(conectar == null) System.exit(1);
+		
+	}
+	public boolean isDbConnected(){
+		
+		try {
+			return !conectar.isClosed();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean isLogin(String user, String pass){
+		
+		PreparedStatement preparedStatement;
+		ResultSet resultSet;
+		String query = "select * from employee where sobreNome = ? and senha = ?";
+		
+		try {
+			
+			preparedStatement = conectar.prepareStatement(query);
+			preparedStatement.setString(1, user);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

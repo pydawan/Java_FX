@@ -1,12 +1,16 @@
 package application;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.time.chrono.IsoChronology;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class LoginController implements Initializable{
 	
@@ -14,6 +18,11 @@ public class LoginController implements Initializable{
 	
 	@FXML
 	private Label isConnected;
+	@FXML
+	private TextField txtUser;
+	@FXML
+	private PasswordField txtSenha;
+
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -26,6 +35,22 @@ public class LoginController implements Initializable{
 			
 			isConnected.setText("NÃO CONECTADO");
 		}
+		
+	}
+	public void Login(ActionEvent event){
+		
+		try {
+			if(loginModel.isLogin(txtUser.getText(), txtSenha.getText())){
+				isConnected.setText("usuário e senha - Corretor");
+				
+			}else{
+				isConnected.setText("Usuário ou senha Invalido");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 	}
 
