@@ -9,9 +9,12 @@ public class LoginModel {
 	
 	public LoginModel(){
 		
-		conectar = SQLiteConnection.conectar();
-		
-		if(conectar == null) System.exit(1);
+		conectar = SQLiteConnection.conectar();		
+		if(conectar == null){
+			
+			System.out.println("Conexão não realizada");
+			System.exit(1);
+		}
 		
 	}
 	public boolean isDbConnected(){
@@ -37,6 +40,7 @@ public class LoginModel {
 			preparedStatement.setString(2, pass);
 			
 			resultSet = preparedStatement.executeQuery();
+			
 			if(resultSet.next()){
 				return true;
 			}else{
