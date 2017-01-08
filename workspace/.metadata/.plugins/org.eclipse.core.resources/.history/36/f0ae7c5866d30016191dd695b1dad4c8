@@ -1,0 +1,12 @@
+package application;
+
+import javafx.scene.control.TextField;
+
+public class Soma {
+	
+	public Integer somar(TextField num1, int num2){
+		
+		return num1 + num2;
+	}
+
+}

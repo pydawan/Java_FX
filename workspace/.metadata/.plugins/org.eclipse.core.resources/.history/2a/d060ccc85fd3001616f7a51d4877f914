@@ -1,0 +1,10 @@
+package application;
+
+public class Soma {
+	
+	public Integer somar(long num1, long num2){
+		
+		return (int) (num1 + num2);
+	}
+
+}

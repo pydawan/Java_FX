@@ -1,0 +1,7 @@
+package application;
+
+public class Soma {
+	
+	public Integer somar(long num1, long num2)
+
+}
