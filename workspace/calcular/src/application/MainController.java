@@ -22,7 +22,12 @@ public class MainController {
 	
 	public void somar(ActionEvent evento){
 		
-		lb.setText(tf1.getText() + tf2.getText());
+		int n1 = Integer.parseInt(tf1.getText());
+		int n2 = Integer.parseInt(tf2.getText());
+		
+		int soma = n1 + n2;
+		
+		lb.setText(String.valueOf(soma));
 	}
 
 }
