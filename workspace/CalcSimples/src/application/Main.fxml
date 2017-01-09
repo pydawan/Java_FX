@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="26.0" layoutY="229.0" mnemonicParsing="false" onAction="#generateRandom" text="ACIONAR" />
+      <Label fx:id="lb" layoutX="6.0" layoutY="7.0" prefHeight="150.0" prefWidth="108.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="tx" layoutX="23.0" layoutY="185.0" prefHeight="25.0" prefWidth="68.0" />
+      <Button fx:id="btn" layoutX="26.0" layoutY="261.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="68.0" text="SAIR" />
+   </children>
+</AnchorPane>

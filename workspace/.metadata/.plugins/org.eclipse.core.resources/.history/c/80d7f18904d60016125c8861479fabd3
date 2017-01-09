@@ -1,0 +1,29 @@
+package application;
+
+import javafx.event.ActionEvent;
+
+import javafx.fxml.FXML;
+
+import javafx.scene.control.Button;
+
+import javafx.scene.control.TextField;
+
+import javafx.scene.control.Label;
+
+public class MainController{
+	@FXML
+	private Button btn;
+	@FXML
+	private Label lb;
+	@FXML
+	private TextField tx;
+	
+	public void btn1(ActionEvent evento){
+		
+		lb.setText(tx.getText());
+		
+	}
+	
+	
+
+}
