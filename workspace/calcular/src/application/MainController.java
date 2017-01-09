@@ -29,5 +29,12 @@ public class MainController {
 		
 		lb.setText(String.valueOf(soma));
 	}
+	public void limpar(ActionEvent eventoLimpar){
+		
+		tf1.setText("");
+		tf2.setText("");
+		
+		lb.setText("");
+	}
 
 }
