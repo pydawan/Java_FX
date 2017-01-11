@@ -1,5 +1,7 @@
 package application;
 
+import java.text.DecimalFormat;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -75,7 +77,7 @@ public class MainController {
 	@FXML
 	private Label refInss;
 	@FXML
-	private Label liquido;
+	private Label vLiquido;
 	@FXML
 	private Label refDSR;
 	@FXML
@@ -85,12 +87,11 @@ public class MainController {
 	
 	
 	
-	private int diasTrabalhados;
+	private double diasTrabalhados;
 	private int fds;
-	private boolean start = true;
 	private double piso;
 	private double adc;
-	private int horas;
+	private double horas;
 	private double horasSeis;
 	private double horasCem;
 	private double inss;
@@ -99,11 +100,12 @@ public class MainController {
 	private double conv;
 	private double sind;
 	
-	
+	DecimalFormat formato = new DecimalFormat("#.##");
 	
 	public void somar(ActionEvent evento){
 		
-		
+		try {
+			
 		refPiso.setText("1446.40");
 		vPiso.setText(refPiso.getText());
 		refAdic.setText("433.92");
@@ -115,24 +117,22 @@ public class MainController {
 		vHorasCem.setText(refHorasCem.getText());
 		refDSR.setText(lbFDS.getText());
 		
-		//convertendo
-		piso = Double.parseDouble(refPiso.getText());
-		adc = Double.parseDouble(refAdic.getText());
 		horasSeis = Double.parseDouble(refHorasSeis.getText());
 		horasCem = Double.parseDouble(refHorasCem.getText());
 		diasTrabalhados = Integer.parseInt(lbDias.getText());
 		fds = Integer.parseInt(lbFDS.getText());
-					
-		//calc bruto		
-		refPiso.setText("1446.40");
 		
-		//Calc Adicional
+		//convertendo
+		refPiso.setText("1446.40");
+		piso = Double.parseDouble(refPiso.getText());
+		
+		adc = Double.parseDouble(refAdic.getText());
 		adc = (piso * 30) / 100;
 		
 		//Calc Horas trabalhada
 		horas = (diasTrabalhados * 11) -191;
 		refHoras.setText(String.valueOf(horas)+" Horas");
-		
+					
 		//horas 100%
 		double t1 = Double.parseDouble(t100.getText());
 		t1 = 11;				
@@ -144,35 +144,38 @@ public class MainController {
 		horasSeis = Double.parseDouble(vHorasSeis.getText());
 		
 		if(horasCem > 1){
-			double ht = (horasSeis * horas)  - horasCem; 
+			double ht = (horasSeis * horas) - horasCem; 
 			horasSeis = ht * 13.66;
 			vHorasSeis.setText(String.valueOf(ht));
 			
 		}else{
 			horasSeis = horas * 13.66;
 			vHorasSeis.setText(String.valueOf(horasSeis));
+		
 		}
 		
 		//Calc DSR
 		double txt = Double.parseDouble(lbFDS.getText());
 		double h60 = Double.parseDouble(vHorasSeis.getText());
 		double txt1 = (h60 / diasTrabalhados) * txt;
-		vDSR.setText(String.valueOf(txt1));
+		vDSR.setText(String.valueOf(formato.format(txt1)));
 				
 		//Calc bruto
 		double res1 = Double.parseDouble(vHorasSeis.getText());
 		double res2 = Double.parseDouble(vHorasCem.getText());
-		double res3 = Double.parseDouble(vDSR.getText());
+		double res3 = txt1;
 				
 		double somar = res1 + res2 + res3 + piso + adc;	
-		bruto.setText(String.valueOf(somar));
+		bruto.setText(String.valueOf(formato.format(somar)));
+		
+		double nBruto = somar;
 		
 		//=============================Descontos============================//
 		
 		//=============================INSS============================//
 		
-		inss = Double.parseDouble(bruto.getText());
-		
+		inss = nBruto;
+			
 		if( inss <= 1556.94){
 		
 			refInss.setText("8");
@@ -200,16 +203,15 @@ public class MainController {
 		
 		refVT.setText("6");						
 		vt = Double.parseDouble(refVT.getText());
-		
 		double res = (piso * 6) / 100;
-		vVT.setText(String.valueOf(res));
+		vVT.setText(String.valueOf(formato.format(res)));
 		
 		//=============================VR============================//
 		refVR.setText("18");	
 		
 		vr = Double.parseDouble(lbDias.getText());
 		double resVR = ((diasTrabalhados * 22.00) * vr) / 100;
-		vVR.setText(String.valueOf(resVR));
+		vVR.setText(String.valueOf(formato.format(resVR)));
 		
 		
 		//=============================CONV============================//
@@ -217,18 +219,30 @@ public class MainController {
 		refCOnv.setText("6");
 		double resCon = Double.parseDouble(refCOnv.getText());
 		double calcCon = (piso * resCon) / 100;
-		vConv.setText(String.valueOf(calcCon));		
+		vConv.setText(String.valueOf(formato.format(calcCon)));		
 		
 		//=============================SIND============================//
 		refSind.setText("1");
 		sind = Double.parseDouble(refSind.getText());
 		double resSind = (piso * sind) / 100;
-		vSind.setText(String.valueOf(resSind));		
+		vSind.setText(String.valueOf(formato.format(resSind)));		
 		
 		//=============================VR============================//
 		
+		double resInss = Double.parseDouble(vInss.getText());
 		
-		//=============================VR============================//
+		double descontos = resSind + calcCon + resVR + res + resInss;
+		vDesconto.setText(String.valueOf(formato.format(descontos)));
+		
+		
+		//=============================LIQUIDO============================//
+		
+		double liquido = nBruto - descontos;
+		vLiquido.setText(String.valueOf(formato.format(liquido)));
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	

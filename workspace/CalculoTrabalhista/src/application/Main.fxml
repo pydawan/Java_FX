@@ -23,12 +23,12 @@
       <Label fx:id="li" layoutX="396.0" layoutY="143.0" text="VALOR" />
       <Separator disable="true" layoutX="15.0" layoutY="151.0" prefHeight="17.0" prefWidth="448.0" />
       <Label fx:id="piso" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="160.0" prefHeight="20.0" prefWidth="150.0" text="PISO" AnchorPane.topAnchor="160.0" />
-      <Label fx:id="refPiso" alignment="BOTTOM_LEFT" layoutX="234.0" layoutY="160.0" />
-      <Label fx:id="refAdic" alignment="BOTTOM_LEFT" layoutX="241.0" layoutY="182.0" />
-      <Label fx:id="refHoras" alignment="BOTTOM_LEFT" layoutX="241.0" layoutY="201.0" />
-      <Label fx:id="refHorasSeis" alignment="BOTTOM_LEFT" layoutX="244.0" layoutY="220.0" />
-      <Label fx:id="refHorasCem" alignment="BOTTOM_LEFT" layoutX="244.0" layoutY="243.0" />
-      <Label fx:id="refDSR" alignment="BOTTOM_LEFT" layoutX="241.0" layoutY="263.0" prefHeight="17.0" prefWidth="29.0" />
+      <Label fx:id="refPiso" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="162.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refAdic" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="182.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHoras" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="201.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHorasSeis" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="221.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHorasCem" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="242.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refDSR" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="263.0" prefHeight="17.0" prefWidth="66.0" />
       <Label fx:id="bruto" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="286.0" prefHeight="17.0" prefWidth="156.0" text="TOTAL A RECEBER BRUTO" />
       <Label fx:id="vPiso" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="161.0" />
       <Label fx:id="vAdc" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="182.0" />
@@ -43,7 +43,7 @@
       <Label fx:id="dsr" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="261.0" prefHeight="20.0" prefWidth="168.0" text="D.S.R SOBRE HORAS EXTRA" />
       <Separator layoutX="9.0" layoutY="359.0" prefHeight="3.0" prefWidth="448.0" />
       <Label fx:id="ld" layoutX="14.0" layoutY="341.0" text="DESCONTOS" />
-      <Label fx:id="ld" layoutX="193.0" layoutY="341.0" text="REFERÊNCIA" />
+      <Label fx:id="ld" layoutX="222.0" layoutY="341.0" text="REFERÊNCIA" />
       <Label fx:id="ld" layoutX="396.0" layoutY="343.0" text="VALOR" />
       <Label fx:id="inss" layoutX="17.0" layoutY="362.0" prefHeight="20.0" prefWidth="150.0" text="INSS">
          <padding>
@@ -76,7 +76,7 @@
          </padding>
       </Label>
       <Label fx:id="bruto" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="286.0" />
-      <Label fx:id="vDesconto" layoutX="390.0" layoutY="497.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vDesconto" layoutX="390.0" layoutY="497.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
@@ -101,22 +101,22 @@
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="vSind" layoutX="390.0" layoutY="470.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vSind" layoutX="390.0" layoutY="470.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="vConv" layoutX="390.0" layoutY="443.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vConv" layoutX="390.0" layoutY="443.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="vVR" layoutX="390.0" layoutY="416.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vVR" layoutX="390.0" layoutY="416.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="vVT" layoutX="390.0" layoutY="389.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vVT" layoutX="390.0" layoutY="389.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
@@ -136,7 +136,7 @@
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="liquido" layoutX="384.0" layoutY="551.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vLiquido" layoutX="384.0" layoutY="551.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
