@@ -1,5 +1,6 @@
 package application;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
@@ -13,6 +14,8 @@ public class MainController {
 	private Button btnCalc;
 	@FXML
 	private TextField lbDias;
+	@FXML
+	private TextField lbFDS;
 	@FXML
 	private Button btnRecalc;
 	@FXML
@@ -93,7 +96,24 @@ public class MainController {
 	private Label refInss;
 	@FXML
 	private Label liquido;
-	@FXML
-	private TextField lbFDS;
+	
+	
+	
+	private int diasTrabalhados;
+	private int fds;
+	private boolean start = true;
+	
+
+	public void somar(ActionEvent evento){
+		
+		diasTrabalhados = Integer.parseInt(lbDias.getText());
+		fds = Integer.parseInt(lbFDS.getText());
+		
+		
+		
+		
+		
+	}
+	
 
 }
