@@ -136,41 +136,57 @@ public class MainController {
 		vr = Double.parseDouble(refCOnv.getText());
 		sind = Double.parseDouble(refSind.getText());
 		
-		//calc bruto
-		
+		//calc bruto		
 		refPiso.setText("1446.40");
+		
+		
 		//Calc Adicional
 		adc = (piso * 30) / 100;
+		
 		//Calc Horas trabalhada
 		horas = (diasTrabalhados * 11) -191;
 		refHoras.setText(String.valueOf(horas)+" Horas");
 		
+		//horas 100%
+			double t1 = Double.parseDouble(t100.getText());
+			t1 = 11;				
+			horasCem = t1 * 17.08;		
+			vHorasCem.setText(String.valueOf(horasCem));
+		
 		//Horas a 60%
 		vHorasSeis.setText(refHorasSeis.getText());
 		horasSeis = Double.parseDouble(vHorasSeis.getText());
-		horasSeis = horas * 13.66;
-		vHorasSeis.setText(String.valueOf(horasSeis));
-		 
-		//horas 100%
-		double t1 = Double.parseDouble(t100.getText());
-		horasCem = ( t1 * 11) * 17.08;		
-		vHorasCem.setText(String.valueOf(horasCem));
+		if(horasCem > 1){
+			double ht = (horasSeis * horas)  - horasCem; 
+			horasSeis = ht * 13.66;
+			vHorasSeis.setText(String.valueOf(ht));
+			
+		}else{
+			horasSeis = horas * 13.66;
+			vHorasSeis.setText(String.valueOf(horasSeis));
+		}
+		
 				
 		//Calc DSR
 		double txt = Double.parseDouble(lbFDS.getText());
-		double txt1 = (horasSeis / diasTrabalhados) * txt;
+		double h60 = Double.parseDouble(vHorasSeis.getText());
+		double txt1 = (h60 / diasTrabalhados) * txt;
 		vDSR.setText(String.valueOf(txt1));
 		
+		
+		
 		//Calc bruto
+		double res1 = Double.parseDouble(vHorasSeis.getText());
+		double res2 = Double.parseDouble(vHorasCem.getText());
+		double res3 = Double.parseDouble(vDSR.getText());
 		
 		
+		double somar = res1 + res2 + res3 + piso + adc;
+			
+		bruto.setText(String.valueOf(somar));
 		
 		
-		
-		
-		
-		
-		
+			
 	}
 	
 
