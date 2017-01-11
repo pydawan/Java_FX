@@ -247,6 +247,11 @@ public class MainController {
 	}
 	public void limpar(ActionEvent event){
 		
+		lbDias.setText("");
+		lbFDS.setText("");
+		tFT.setText("");
+		t100.setText("");
+		
 		//todos os ref
 		refPiso.setText("");
 		refAdic.setText("");
