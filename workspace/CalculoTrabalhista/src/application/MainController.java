@@ -99,9 +99,7 @@ public class MainController {
 	private double conv;
 	private double sind;
 	
-
 	public void somar(ActionEvent evento){
-		
 		
 		refPiso.setText("1446.40");
 		vPiso.setText(refPiso.getText());
@@ -115,7 +113,6 @@ public class MainController {
 		refDSR.setText(lbFDS.getText());
 		
 		//convertendo
-		
 		piso = Double.parseDouble(refPiso.getText());
 		adc = Double.parseDouble(refAdic.getText());
 		horasSeis = Double.parseDouble(refHorasSeis.getText());
@@ -138,7 +135,6 @@ public class MainController {
 		
 		//calc bruto		
 		refPiso.setText("1446.40");
-		
 		
 		//Calc Adicional
 		adc = (piso * 30) / 100;
@@ -166,25 +162,21 @@ public class MainController {
 			vHorasSeis.setText(String.valueOf(horasSeis));
 		}
 		
-				
 		//Calc DSR
 		double txt = Double.parseDouble(lbFDS.getText());
 		double h60 = Double.parseDouble(vHorasSeis.getText());
 		double txt1 = (h60 / diasTrabalhados) * txt;
 		vDSR.setText(String.valueOf(txt1));
-		
-		
-		
+				
 		//Calc bruto
 		double res1 = Double.parseDouble(vHorasSeis.getText());
 		double res2 = Double.parseDouble(vHorasCem.getText());
 		double res3 = Double.parseDouble(vDSR.getText());
-		
-		
-		double somar = res1 + res2 + res3 + piso + adc;
-			
+				
+		double somar = res1 + res2 + res3 + piso + adc;	
 		bruto.setText(String.valueOf(somar));
 		
+		//=============================descontos============================//
 		
 			
 	}
