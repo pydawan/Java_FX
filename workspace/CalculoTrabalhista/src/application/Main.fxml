@@ -81,22 +81,22 @@
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="refSind" layoutX="215.0" layoutY="470.0" prefHeight="20.0" prefWidth="80.0" text="1%">
+      <Label fx:id="refSind" layoutX="215.0" layoutY="470.0" prefHeight="20.0" prefWidth="80.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="refCOnv" layoutX="215.0" layoutY="443.0" prefHeight="20.0" prefWidth="80.0" text="6%">
+      <Label fx:id="refCOnv" layoutX="215.0" layoutY="443.0" prefHeight="20.0" prefWidth="80.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="refVR" layoutX="215.0" layoutY="416.0" prefHeight="20.0" prefWidth="80.0" text="5%">
+      <Label fx:id="refVR" layoutX="215.0" layoutY="416.0" prefHeight="20.0" prefWidth="80.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="refVT" layoutX="215.0" layoutY="389.0" prefHeight="20.0" prefWidth="80.0" text="6%">
+      <Label fx:id="refVT" layoutX="215.0" layoutY="389.0" prefHeight="20.0" prefWidth="80.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
@@ -121,12 +121,12 @@
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="vInss" layoutX="390.0" layoutY="362.0" prefHeight="20.0" prefWidth="50.0" text="1000,00">
+      <Label fx:id="vInss" layoutX="390.0" layoutY="362.0" prefHeight="20.0" prefWidth="50.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>
       </Label>
-      <Label fx:id="refInss" layoutX="215.0" layoutY="362.0" prefHeight="20.0" prefWidth="80.0" text="9%">
+      <Label fx:id="refInss" layoutX="215.0" layoutY="362.0" prefHeight="20.0" prefWidth="80.0">
          <padding>
             <Insets bottom="5.0" left="5.0" top="5.0" />
          </padding>

@@ -122,20 +122,7 @@ public class MainController {
 		horasCem = Double.parseDouble(refHorasCem.getText());
 		diasTrabalhados = Integer.parseInt(lbDias.getText());
 		fds = Integer.parseInt(lbFDS.getText());
-				
-		//descontos
-		refInss.setText("9");
-		refVT.setText("6");
-		refVR.setText("5");
-		refCOnv.setText("6");
-		refSind.setText("1");
-		
-		//convertendo		
-		inss = Double.parseDouble(refInss.getText());
-		vt = Double.parseDouble(refVT.getText());
-		vr = Double.parseDouble(refCOnv.getText());
-		sind = Double.parseDouble(refSind.getText());
-		
+					
 		//calc bruto		
 		refPiso.setText("1446.40");
 		
@@ -147,14 +134,15 @@ public class MainController {
 		refHoras.setText(String.valueOf(horas)+" Horas");
 		
 		//horas 100%
-			double t1 = Double.parseDouble(t100.getText());
-			t1 = 11;				
-			horasCem = t1 * 17.08;		
-			vHorasCem.setText(String.valueOf(horasCem));
+		double t1 = Double.parseDouble(t100.getText());
+		t1 = 11;				
+		horasCem = t1 * 17.08;		
+		vHorasCem.setText(String.valueOf(horasCem));
 		
 		//Horas a 60%
 		vHorasSeis.setText(refHorasSeis.getText());
 		horasSeis = Double.parseDouble(vHorasSeis.getText());
+		
 		if(horasCem > 1){
 			double ht = (horasSeis * horas)  - horasCem; 
 			horasSeis = ht * 13.66;
@@ -179,9 +167,69 @@ public class MainController {
 		double somar = res1 + res2 + res3 + piso + adc;	
 		bruto.setText(String.valueOf(somar));
 		
-		//=============================descontos============================//
+		//=============================Descontos============================//
 		
+		//=============================INSS============================//
+		
+		inss = Double.parseDouble(bruto.getText());
+		
+		if( inss <= 1556.94){
+		
+			refInss.setText("8");
+			double res = Double.parseDouble(refInss.getText());
+			double r2 = (inss * res) / 100;			
+			vInss.setText(String.valueOf(r2));
 			
+		}
+		if(inss > 1556.95 || inss <= 2594.92){
+			
+			refInss.setText("9");
+			double res = Double.parseDouble(refInss.getText());
+			double r2 = (inss * res) / 100;
+			vInss.setText(String.valueOf(r2));
+			
+		}
+		if(inss > 2594.92){
+			
+			refInss.setText("11");
+			double res = Double.parseDouble(refInss.getText());
+			double r2 = ( inss * res) / 100;
+			vInss.setText(String.valueOf(r2));
+		}
+		//=============================VT============================//
+		
+		refVT.setText("6");						
+		vt = Double.parseDouble(refVT.getText());
+		
+		double res = (piso * 6) / 100;
+		vVT.setText(String.valueOf(res));
+		
+		//=============================VR============================//
+		refVR.setText("18");	
+		
+		vr = Double.parseDouble(lbDias.getText());
+		double resVR = ((diasTrabalhados * 22.00) * vr) / 100;
+		vVR.setText(String.valueOf(resVR));
+		
+		
+		//=============================CONV============================//
+		
+		refCOnv.setText("6");
+		double resCon = Double.parseDouble(refCOnv.getText());
+		double calcCon = (piso * resCon) / 100;
+		vConv.setText(String.valueOf(calcCon));		
+		
+		//=============================SIND============================//
+		refSind.setText("1");
+		sind = Double.parseDouble(refSind.getText());
+		double resSind = (piso * sind) / 100;
+		vSind.setText(String.valueOf(resSind));		
+		
+		//=============================VR============================//
+		
+		
+		//=============================VR============================//
+		
 	}
 	
 
