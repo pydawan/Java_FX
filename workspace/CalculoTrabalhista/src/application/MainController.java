@@ -245,6 +245,43 @@ public class MainController {
 		}
 		
 	}
+	public void limpar(ActionEvent event){
+		
+		//todos os ref
+		refPiso.setText("");
+		refAdic.setText("");
+		refHoras.setText("");
+		refHorasSeis.setText("");
+		refHorasCem.setText("");
+		refDSR.setText("");
+		refCOnv.setText("");
+		refInss.setText("");
+		refSind.setText("");
+		refVR.setText("");
+		refVT.setText("");
+		
+		//todos v
+		vPiso.setText("");
+		vAdc.setText("");
+		vHoras.setText("");
+		vHorasSeis.setText("");
+		vHorasCem.setText("");
+		vDSR.setText("");
+		vConv.setText("");
+		vInss.setText("");
+		vSind.setText("");
+		vVR.setText("");
+		vVT.setText("");
+		vDesconto.setText("");
+		vLiquido.setText("");
+		
+		//label sem referencias	
+		bruto.setText("");
 	
+	}
+	public void sair(ActionEvent event){
+		
+		System.exit(0);
+	}
 
 }

@@ -16,8 +16,8 @@
          <font>
             <Font size="11.0" />
          </font></TextField>
-      <Button fx:id="btnRecalc" layoutX="196.0" layoutY="601.0" mnemonicParsing="false" text="RECALCULAR" />
-      <Button fx:id="btnSair" layoutX="375.0" layoutY="601.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="SAIR" />
+      <Button fx:id="btnRecalc" layoutX="196.0" layoutY="601.0" mnemonicParsing="false" onAction="#limpar" text="RECALCULAR" />
+      <Button fx:id="btnSair" layoutX="375.0" layoutY="601.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="87.0" text="SAIR" />
       <Label fx:id="li" layoutX="17.0" layoutY="143.0" text="DESCRIÇÃO" />
       <Label fx:id="li" layoutX="226.0" layoutY="143.0" text="REFERÊNCIA" />
       <Label fx:id="li" layoutX="396.0" layoutY="143.0" text="VALOR" />
