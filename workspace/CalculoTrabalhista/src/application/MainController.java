@@ -99,7 +99,10 @@ public class MainController {
 	private double conv;
 	private double sind;
 	
+	
+	
 	public void somar(ActionEvent evento){
+		
 		
 		refPiso.setText("1446.40");
 		vPiso.setText(refPiso.getText());
