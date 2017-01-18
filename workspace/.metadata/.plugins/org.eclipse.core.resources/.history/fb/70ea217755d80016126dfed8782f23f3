@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btnCalc" layoutX="16.0" layoutY="601.0" mnemonicParsing="false" onAction="#somar" prefHeight="25.0" prefWidth="87.0" text="CALCULAR" />
+      <Label alignment="BOTTOM_LEFT" layoutX="63.0" layoutY="13.0" prefHeight="17.0" prefWidth="208.0" text="QUANTIDADE DE DIAS TRABALHADO" />
+      <TextField fx:id="lbDias" layoutX="17.0" layoutY="9.0" prefHeight="20.0" prefWidth="40.0" promptText="DIAS">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <Button fx:id="btnRecalc" layoutX="196.0" layoutY="601.0" mnemonicParsing="false" onAction="#limpar" text="RECALCULAR" />
+      <Button fx:id="btnSair" layoutX="375.0" layoutY="601.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="87.0" text="SAIR" />
+      <Label fx:id="li" layoutX="17.0" layoutY="143.0" text="DESCRIÇÃO" />
+      <Label fx:id="li" layoutX="226.0" layoutY="143.0" text="REFERÊNCIA" />
+      <Label fx:id="li" layoutX="396.0" layoutY="143.0" text="VALOR" />
+      <Separator disable="true" layoutX="15.0" layoutY="151.0" prefHeight="17.0" prefWidth="448.0" />
+      <Label fx:id="piso" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="160.0" prefHeight="20.0" prefWidth="150.0" text="PISO" AnchorPane.topAnchor="160.0" />
+      <Label fx:id="refPiso" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="162.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refAdic" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="182.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHoras" alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="201.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHorasSeis" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="221.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refHorasCem" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="242.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="refDSR" alignment="BOTTOM_LEFT" layoutX="227.0" layoutY="263.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="bruto" alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="286.0" prefHeight="17.0" prefWidth="156.0" text="TOTAL A RECEBER BRUTO" />
+      <Label fx:id="vPiso" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="161.0" />
+      <Label fx:id="vAdc" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="182.0" />
+      <Label fx:id="vHoras" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="201.0" text="---" />
+      <Label fx:id="vHorasSeis" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="221.0" />
+      <Label fx:id="vHorasCem" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="242.0" />
+      <Label fx:id="vDSR" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="263.0" />
+      <Label fx:id="adc" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="180.0" prefHeight="20.0" prefWidth="168.0" text="ADCIONAL PERICULOSIDADE" />
+      <Label fx:id="hT" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="201.0" prefHeight="17.0" prefWidth="150.0" text="HORAS TRABALHADAS" />
+      <Label fx:id="horasSeis" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="219.0" prefHeight="20.0" prefWidth="150.0" text="HORAS EXTRA 60%" />
+      <Label fx:id="horasCem" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="240.0" prefHeight="20.0" prefWidth="150.0" text="HORAS EXTRAS 100%" />
+      <Label fx:id="dsr" alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="261.0" prefHeight="20.0" prefWidth="168.0" text="D.S.R SOBRE HORAS EXTRA" />
+      <Separator layoutX="9.0" layoutY="359.0" prefHeight="3.0" prefWidth="448.0" />
+      <Label fx:id="ld" layoutX="14.0" layoutY="341.0" text="DESCONTOS" />
+      <Label fx:id="ld" layoutX="222.0" layoutY="341.0" text="REFERÊNCIA" />
+      <Label fx:id="ld" layoutX="396.0" layoutY="343.0" text="VALOR" />
+      <Label fx:id="inss" layoutX="17.0" layoutY="362.0" prefHeight="20.0" prefWidth="150.0" text="INSS">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vTrans" layoutX="17.0" layoutY="389.0" prefHeight="20.0" prefWidth="150.0" text="VALE TRANSPORTE">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vRef" layoutX="17.0" layoutY="416.0" prefHeight="20.0" prefWidth="150.0" text="VALE REFEIÇÃO">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="conv" layoutX="17.0" layoutY="443.0" prefHeight="20.0" prefWidth="150.0" text="CONVÊNIO">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="sind" layoutX="17.0" layoutY="470.0" prefHeight="20.0" prefWidth="150.0" text="SINDICATO">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="desconto" layoutX="17.0" layoutY="497.0" prefHeight="20.0" prefWidth="150.0" text="TOTAL DE DESCONTO">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="bruto" alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="286.0" />
+      <Label fx:id="vDesconto" layoutX="390.0" layoutY="497.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="refSind" layoutX="215.0" layoutY="470.0" prefHeight="20.0" prefWidth="80.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="refCOnv" layoutX="215.0" layoutY="443.0" prefHeight="20.0" prefWidth="80.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="refVR" layoutX="215.0" layoutY="416.0" prefHeight="20.0" prefWidth="80.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="refVT" layoutX="215.0" layoutY="389.0" prefHeight="20.0" prefWidth="80.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vSind" layoutX="390.0" layoutY="470.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vConv" layoutX="390.0" layoutY="443.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vVR" layoutX="390.0" layoutY="416.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vVT" layoutX="390.0" layoutY="389.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vInss" layoutX="390.0" layoutY="362.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="refInss" layoutX="215.0" layoutY="362.0" prefHeight="20.0" prefWidth="80.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="liquido" layoutX="13.0" layoutY="551.0" prefHeight="27.0" prefWidth="180.0" text="TOTAL A RECEBER LÍQUIDO">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="vLiquido" layoutX="384.0" layoutY="551.0" prefHeight="20.0" prefWidth="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Separator layoutX="11.0" layoutY="547.0" prefHeight="3.0" prefWidth="448.0" />
+      <Separator layoutX="3.0" layoutY="280.0" prefHeight="3.0" prefWidth="464.0" />
+      <Separator layoutX="11.0" layoutY="496.0" prefHeight="3.0" prefWidth="456.0" />
+      <Separator layoutX="17.0" layoutY="582.0" prefHeight="3.0" prefWidth="448.0" />
+      <TextField fx:id="lbFDS" layoutX="17.0" layoutY="37.0" prefHeight="20.0" prefWidth="40.0" promptText="FDS">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <Label alignment="BOTTOM_LEFT" layoutX="63.0" layoutY="41.0" prefHeight="17.0" prefWidth="216.0" text="DOMINGOS E FÉRIADOS TRABALHADO" />
+      <Separator layoutX="1.0" layoutY="306.0" prefHeight="3.0" prefWidth="464.0" />
+      <Separator layoutX="11.0" layoutY="523.0" prefHeight="3.0" prefWidth="456.0" />
+      <Label alignment="BOTTOM_LEFT" layoutX="67.0" layoutY="68.0" prefHeight="17.0" prefWidth="208.0" text="FOLGA TRABALHADA - FT" />
+      <TextField fx:id="tFT" layoutX="17.0" layoutY="64.0" prefHeight="20.0" prefWidth="40.0" promptText="FT">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label alignment="BOTTOM_LEFT" layoutX="67.0" layoutY="96.0" prefHeight="17.0" prefWidth="208.0" text="DIAS 100%" />
+      <TextField fx:id="t100" layoutX="17.0" layoutY="92.0" prefHeight="20.0" prefWidth="40.0" promptText="100%">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="img" fitHeight="128.0" fitWidth="192.0" layoutX="275.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
