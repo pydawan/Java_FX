@@ -40,6 +40,7 @@ public class ControleMain {
 			}
 			long num2 = Long.parseLong(result.getText());
 			float output = controle.calculator(num1, num2, operador);
+			result.setText(String.valueOf(output));
 			operador = "";
 			start = true;
 		}
