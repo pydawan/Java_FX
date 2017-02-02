@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="345.0" prefWidth="295.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <Label fx:id="lbNumero" alignment="CENTER" layoutX="20.0" layoutY="40.0" prefHeight="67.0" prefWidth="251.0" text="Número">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGerador" layoutX="20.0" layoutY="282.0" mnemonicParsing="false" onAction="#gerar" prefHeight="25.0" prefWidth="266.0" text="Gerando números aleatorios de 0 à 50" />
+   </children>
+</AnchorPane>
