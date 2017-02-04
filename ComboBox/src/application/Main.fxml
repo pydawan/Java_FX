@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="334.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ComboBox fx:id="combobox" layoutX="18.0" layoutY="96.0" onAction="#combobox" prefHeight="46.0" prefWidth="225.0" />
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="66.0" prefWidth="225.0" text="Label" textFill="#eb0707">
+         <font>
+            <Font name="Vijaya" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt" layoutX="18.0" layoutY="242.0" prefHeight="25.0" prefWidth="225.0" promptText="Inserir no array" />
+      <Button layoutX="82.0" layoutY="288.0" mnemonicParsing="false" onAction="#combobox" prefHeight="25.0" prefWidth="81.0" text="Inserir" />
+   </children>
+</AnchorPane>
