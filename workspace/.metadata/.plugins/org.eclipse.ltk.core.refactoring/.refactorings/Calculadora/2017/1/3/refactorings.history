@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.ModelView&apos; to &apos;Model&apos;&#x0D;&#x0A;- Original project: &apos;Calculadora&apos;&#x0D;&#x0A;- Original element: &apos;application.ModelView&apos;&#x0D;&#x0A;- Renamed element: &apos;application.Model&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ModelView&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{ModelView.java[ModelView" matchStrategy="1" name="Model" qualified="false" references="true" similarDeclarations="false" stamp="1484747720604" textual="false" version="1.0"/>
+</session>

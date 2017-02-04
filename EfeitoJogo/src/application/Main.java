@@ -122,6 +122,7 @@ public class Main extends Application {
 		Scene scene = new Scene(createContent());
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Efeito de Imagens");
 		primaryStage.show();
 
 	}

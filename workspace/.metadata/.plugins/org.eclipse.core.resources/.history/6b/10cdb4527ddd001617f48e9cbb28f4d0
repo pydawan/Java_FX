@@ -1,0 +1,24 @@
+package application;
+
+public class ModelView {
+	
+	
+	public double calc(long num1, long num2, String operador){
+		
+		switch (operador)) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		
+		
+		return 0;
+		
+	}
+	
+
+}

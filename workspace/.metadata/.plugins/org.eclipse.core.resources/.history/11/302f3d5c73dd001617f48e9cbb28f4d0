@@ -1,0 +1,20 @@
+package application;
+
+public class ModelView {
+	
+	
+	public Long calc(long num1, long num2, String operador){
+		
+		switch (operadore) {
+		case "+":
+			return num1 + num2;		
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+	
+
+}
