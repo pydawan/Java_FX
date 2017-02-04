@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="377.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btn" layoutX="5.0" layoutY="281.0" mnemonicParsing="false" onAction="#acation" prefHeight="84.0" prefWidth="167.0" text="LOGAR">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb" alignment="CENTER" layoutY="8.0" onDragDetected="#acation" prefHeight="54.0" prefWidth="353.0">
+         <font>
+            <Font name="Arabic Typesetting" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usuario" layoutX="177.0" layoutY="281.0" prefHeight="35.0" prefWidth="165.0" promptText="Usuário" />
+      <PasswordField fx:id="senha" layoutX="177.0" layoutY="329.0" prefHeight="35.0" prefWidth="165.0" promptText="Senha" />
+      <ImageView fx:id="img" fitHeight="203.0" fitWidth="293.0" layoutX="89.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      	<Image url="img/teste.jpg" />
+      </image>
+      </ImageView>
+   </children>
+</AnchorPane>
