@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="543.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label alignment="CENTER" layoutY="21.0" prefHeight="25.0" prefWidth="66.0" text="NOME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lbNome" layoutX="73.0" layoutY="21.0" prefHeight="25.0" prefWidth="294.0" promptText="Nome Completo" />
+      <TextField fx:id="lbEmpresa" layoutX="73.0" layoutY="55.0" prefHeight="25.0" prefWidth="294.0" promptText="Empresa" />
+      <Label alignment="CENTER" layoutY="55.0" prefHeight="25.0" prefWidth="66.0" text="EMPRESA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="382.0" layoutY="21.0" prefHeight="25.0" prefWidth="66.0" text="VEICULO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="382.0" layoutY="55.0" prefHeight="25.0" prefWidth="66.0" text="PLACA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lbPlaca" layoutX="461.0" layoutY="55.0" prefHeight="25.0" prefWidth="207.0" promptText="Número da placa" />
+      <Button layoutX="21.0" layoutY="488.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="100.0" text="SALVAR" />
+      <Button layoutX="138.0" layoutY="489.0" mnemonicParsing="false" onAction="#remover" prefHeight="25.0" prefWidth="100.0" text="REMOVER" />
+      <Button layoutX="253.0" layoutY="489.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="130.0" text="REMOVER TUDO" />
+      <Button layoutX="627.0" layoutY="489.0" mnemonicParsing="false" onAction="#sair" text="SAIR" />
+      <ListView fx:id="listView" layoutX="21.0" layoutY="110.0" prefHeight="349.0" prefWidth="653.0" />
+      <TextField fx:id="lbVeiculo" layoutX="461.0" layoutY="21.0" prefHeight="25.0" prefWidth="207.0" promptText="Marca do veículo" />
+   </children>
+</AnchorPane>
