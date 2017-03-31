@@ -1,21 +1,31 @@
 package application;
 
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class ResultadoController {
 	
-	MainController mc = new MainController();
-	
-	TextField text = mc.getNome();
 	
 	@FXML
-	private Label lbResult = mc.getLbResultado();
-	@FXML
-	private Label lbParabens;
+	private Label lbResult = new MainController().getLbResultado();
+		
 	
+
+	
+	public void sair(ActionEvent actionEvent){
+		System.exit(0);
+	}
+	
+	
+	
+	
+	
+	
+
+
 	
 	
 	

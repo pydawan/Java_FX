@@ -42,9 +42,7 @@ public class MainController {
 		this.nome = nome;
 	}
 	
-	
-	
-	
+
 
 	public void verResultado(ActionEvent event) {
 		
@@ -80,20 +78,19 @@ public class MainController {
 		}
 
 		informar();
-/*
-		try {
-			Parent root = FXMLLoader.load(getClass().getResource("/application/Resultado.fxml"));
-			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			Stage secundaryStage = new Stage();
-			secundaryStage.setScene(scene);
-			secundaryStage.show();
-		} catch (IOException e) {
-			e.printStackTrace();
+					
+			try {
+				Parent root = FXMLLoader.load(getClass().getResource("/application/Resultado.fxml"));
+				Scene scene = new Scene(root);
+				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				Stage secundaryStage = new Stage();
+				secundaryStage.setScene(scene);
+				secundaryStage.show();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		System.exit(0);
-*/
-	}
+	
 
 	public void informar() {
 		
