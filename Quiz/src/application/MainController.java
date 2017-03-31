@@ -1,16 +1,10 @@
 package application;
 
-import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
-import javafx.stage.Stage;
 
 public class MainController {
 
@@ -22,30 +16,30 @@ public class MainController {
 
 	@FXML
 	private Label lbResultado;
-	
+
 	@FXML
 	private TextField nome;
-	
+
 	private int mais;
-	
-	
+
 	public Label getLbResultado() {
 		return lbResultado;
 	}
+
 	public void setLbResultado(Label lbResultado) {
 		this.lbResultado = lbResultado;
 	}
+
 	public TextField getNome() {
 		return nome;
 	}
+
 	public void setNome(TextField nome) {
 		this.nome = nome;
 	}
-	
-
 
 	public void verResultado(ActionEvent event) {
-		
+
 		if (r1.getText().equals("e")) {
 			this.mais++;
 		}
@@ -78,22 +72,11 @@ public class MainController {
 		}
 
 		informar();
-					
-			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/application/Resultado.fxml"));
-				Scene scene = new Scene(root);
-				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-				Stage secundaryStage = new Stage();
-				secundaryStage.setScene(scene);
-				secundaryStage.show();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-	
+
+	}
 
 	public void informar() {
-		
+
 		if (this.mais == 10) {
 			lbResultado.setText("10 Acertos ");
 		}
@@ -127,6 +110,10 @@ public class MainController {
 		if (this.mais == 0) {
 			lbResultado.setText("Zero Acerto ");
 		}
+	}
+	
+	public void sair(ActionEvent event){
+		System.exit(0);
 	}
 
 }
