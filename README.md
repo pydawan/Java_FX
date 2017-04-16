@@ -1,4 +1,4 @@
 # GUI - JavaFX
 
 Primeiro projetos com GUI javafx.
-Cosntêm grande parte dos componentes da interface FX.
+Contêm grande parte dos componentes da interface FX.
