@@ -1,7 +1,8 @@
 # GUI - JavaFX
 - Calculadora (#calculadora)
 - Planilha de Cadastro (#planilha-de-cadastro)
- - [Cadastro de Visitantes] (#cadastro-de-visitantes)
+- [Cadastro de Visitantes](#cadastro-de-visitantes)
+
 
 Primeiro projetos com GUI javafx.
 Contêm grande parte dos componentes da interface FX.
